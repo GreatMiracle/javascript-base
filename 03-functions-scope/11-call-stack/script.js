@@ -1,32 +1,38 @@
-let x;
+// Open 'sources' tab and put a breakpoint at the first() function
 
-// Array Literal
-const numbers = [12, 45, 33, 29, 39, 102];
-const mixed = [12, 'Hello', true, null];
+// First Example
 
-// Array Constructor
-const fruits = new Array('apple', 'grape', 'orange');
-
-// Get value by index
-x = numbers[0];
-
-x = numbers[0] + numbers[3];
-
-x = `My favorite fruit is an ${fruits[2]}`;
-
-x = numbers.length;
-
-fruits[2] = 'pear';
-
-// length is not read-only
-fruits.length = 2;
-
-fruits[3] = 'strawberry';
-
-// // Using the length as the index will always add on the the end
-fruits[fruits.length] = 'blueberry';
-fruits[fruits.length] = 'peach';
-
-x = fruits;
-
-console.log(x);
+// function first() {
+//     console.log('first...');
+//   }
+  
+//   function second() {
+//     console.log('second...');
+//   }
+  
+//   function third() {
+//     console.log('third...');
+//   }
+  
+//   first();
+//   second();
+//   third();
+  
+  // Second Example
+  
+  function first() {
+    console.log('first...');
+    second();
+  }
+  
+  function second() {
+    console.log('second...');
+    third();
+  }
+  
+  function third() {
+    console.log('third...');
+  }
+  
+  first();
+  

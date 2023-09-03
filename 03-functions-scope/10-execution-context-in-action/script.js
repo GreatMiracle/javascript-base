@@ -1,32 +1,13 @@
-let x;
+//  Go to 'sources' tab and add a breakpoint at the first line and step through to see the execution phase in action
+const x = 100;
+const y = 50;
 
-// Array Literal
-const numbers = [12, 45, 33, 29, 39, 102];
-const mixed = [12, 'Hello', true, null];
+function getSum(n1, n2) {
+  const sum = n1 + n2;
+  return sum;
+}
 
-// Array Constructor
-const fruits = new Array('apple', 'grape', 'orange');
+const sum1 = getSum(x, y);
+const sum2 = getSum(10, 5);
 
-// Get value by index
-x = numbers[0];
-
-x = numbers[0] + numbers[3];
-
-x = `My favorite fruit is an ${fruits[2]}`;
-
-x = numbers.length;
-
-fruits[2] = 'pear';
-
-// length is not read-only
-fruits.length = 2;
-
-fruits[3] = 'strawberry';
-
-// // Using the length as the index will always add on the the end
-fruits[fruits.length] = 'blueberry';
-fruits[fruits.length] = 'peach';
-
-x = fruits;
-
-console.log(x);
+console.log(sum1, sum2);

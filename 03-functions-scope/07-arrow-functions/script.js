@@ -1,32 +1,35 @@
-let x;
+//  Normal function declaration
+// function add(a, b) {
+//   return a + b;
+// }
 
-// Array Literal
-const numbers = [12, 45, 33, 29, 39, 102];
-const mixed = [12, 'Hello', true, null];
-
-// Array Constructor
-const fruits = new Array('apple', 'grape', 'orange');
-
-// Get value by index
-x = numbers[0];
-
-x = numbers[0] + numbers[3];
-
-x = `My favorite fruit is an ${fruits[2]}`;
-
-x = numbers.length;
-
-fruits[2] = 'pear';
-
-// length is not read-only
-fruits.length = 2;
-
-fruits[3] = 'strawberry';
-
-// // Using the length as the index will always add on the the end
-fruits[fruits.length] = 'blueberry';
-fruits[fruits.length] = 'peach';
-
-x = fruits;
-
-console.log(x);
+// Arrow function syntax
+const add = (a, b) => {
+    return a + b;
+  };
+  
+  // Implicit Return
+  const subtract = (a, b) => a - b;
+  
+  // Can leave off () with a single param
+  const double = (a) => a * 2;
+  
+  // Returning an object
+  const createObj = () => ({
+    name: 'Brad',
+  });
+  
+  const numbers = [1, 2, 3, 4, 5];
+  
+//   numbers.forEach(function (n) {
+//     console.log(n);
+//   });
+  
+//   Arrow function in a callback
+  numbers.forEach((n) => console.log(n));
+  
+  console.log(add(1, 2));
+  console.log(subtract(10, 5));
+  console.log(double(10));
+  console.log(createObj());
+  

@@ -1,32 +1,41 @@
-let x;
+// Challenge 1
+// function getCelsius(f) {
+//   const celsius = ((f - 32) * 5) / 9;
+//   return celsius;
+// }
 
-// Array Literal
-const numbers = [12, 45, 33, 29, 39, 102];
-const mixed = [12, 'Hello', true, null];
+const getCelsius = (f) => ((f - 32) * 5) / 9;
 
-// Array Constructor
-const fruits = new Array('apple', 'grape', 'orange');
+console.log(`The temp is ${getCelsius(35)} \xB0C `);
 
-// Get value by index
-x = numbers[0];
+// // Challenge 2
+function minMax(arr) {
+  const min = Math.min(...arr);
+  const max = Math.max(...arr);
 
-x = numbers[0] + numbers[3];
+  return {
+    min,
+    max,
+  };
+}
 
-x = `My favorite fruit is an ${fruits[2]}`;
+console.log(minMax([2, 31, 4, 5, 6]));
 
-x = numbers.length;
+((arr) =>  {
+    const min = Math.min(...arr);
+    const max = Math.max(...arr);
+  
+    console.log(
+     "min: "+ min,
+      "max: " +max,
+    );
+  })([2, 31, 4, 5, 6])
 
-fruits[2] = 'pear';
+// Challenge 3
+((length, width) => {
+  const area = length * width;
 
-// length is not read-only
-fruits.length = 2;
+  const output = `The area of a rectangle with a length of ${length} and a width of ${width} is ${area}.`;
 
-fruits[3] = 'strawberry';
-
-// // Using the length as the index will always add on the the end
-fruits[fruits.length] = 'blueberry';
-fruits[fruits.length] = 'peach';
-
-x = fruits;
-
-console.log(x);
+  console.log(output);
+})(20, 10);
