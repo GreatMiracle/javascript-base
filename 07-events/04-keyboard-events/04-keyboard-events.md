@@ -1,0 +1,1 @@
+thuộc tính repeat của sự kiện bàn phím e. Khi người dùng nhấn và giữ một phím bàn phím trong thời gian dài, sự kiện bàn phím sẽ bắt đầu lặp lại (repeat). Điều kiện if (e.repeat) kiểm tra xem sự kiện bàn phím có đang trong trạng thái lặp lại hay không.

@@ -1,0 +1,3 @@
+phương thức stopPropagation() của đối tượng sự kiện (event object). Bằng cách sử dụng e.stopPropagation(), bạn có thể ngăn chặn sự kiện khỏi việc lan truyền lên các phần tử cha. Ví dụ, nếu bạn đặt e.stopPropagation() trong xử lý sự kiện của nút, thì khi bạn nhấp vào nút, chỉ có thông báo "button was clicked" được hiển thị và không có sự kiện nào khác lan truyền.
+
+phương thức stopImmediatePropagation(), một phương thức tương tự như stopPropagation(), nhưng nó ngăn chặn tất cả các xử lý sự kiện khỏi chạy trên một phần tử cụ thể.
