@@ -1,45 +1,26 @@
 const itemForm = document.getElementById('item-form');
 const itemInput = document.getElementById('item-input');
 const itemListUl = document.getElementById('item-list');
+const clearBtn = document.getElementById('clear');
+const itemFilter = document.getElementById('filter');
 
-function addItem(e) {
-  e.preventDefault();
-  const newItem = itemInput.value;
-
-  // Validate Input
-  if (newItem === '') {
-    alert('nhập alert đi bạn ei,');
-    return;
-  }
-
-  // Create list item
-  const newLi = document.createElement('li');
-  newLi.appendChild(document.createTextNode(newItem));
-
-  const button = createButton('remove-item btn-link text-red');
-
-  newLi.appendChild(button);
-
-  itemListUl.appendChild(newLi);
+function checkUI() {
   itemInput.value = '';
-}
 
-function createButton(classes) {
-  const button = document.createElement('button');
-  button.className = classes;
-
-  const icon = createIcon('fa-solid fa-xmark');
-  button.appendChild(icon);
-
-  return button;
-}
-
-function createIcon(classes) {
-  const icon = document.createElement('i');
-  icon.className = classes;
-
-  return icon;
+  const items = itemListUl.querySelectorAll('li');
+  console.log(items);
+  if (items.length === 0) {
+    console.log('không có items nào.');
+    clearBtn.style.display = 'none';
+    itemFilter.style.display = 'none';
+  } else {
+    console.log('có items.');
+    clearBtn.style.display = 'block';
+    itemFilter.style.display = 'block';
+  }
 }
 
 // Event Listeners
-itemForm.addEventListener('submit', addItem);
+checkUI();
+
+
