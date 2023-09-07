@@ -1,0 +1,66 @@
+{
+    "results": [
+      {
+        "gender": "female",
+        "name": {
+          "title": "Ms",
+          "first": "Buse",
+          "last": "Avan"
+        },
+        "location": {
+          "street": {
+            "number": 2020,
+            "name": "Istiklal Cd"
+          },
+          "city": "Antalya",
+          "state": "Bolu",
+          "country": "Turkey",
+          "postcode": 61550,
+          "coordinates": {
+            "latitude": "67.5275",
+            "longitude": "83.3742"
+          },
+          "timezone": {
+            "offset": "+4:30",
+            "description": "Kabul"
+          }
+        },
+        "email": "buse.avan@example.com",
+        "login": {
+          "uuid": "12da3712-9b27-4db4-a164-31dcf2fd6350",
+          "username": "goldenelephant181",
+          "password": "guitar1",
+          "salt": "TlDYStxe",
+          "md5": "866ffcbec4b2626f11ae67abede90a50",
+          "sha1": "59bb29c55d4983f774a60f4b975d5bc7d34c4826",
+          "sha256": "596ea0e33a85daeb16ea0f3bd55afaf265ca38d6f8260f8da327eb2537dc8642"
+        },
+        "dob": {
+          "date": "1991-08-18T07:54:23.818Z",
+          "age": 32
+        },
+        "registered": {
+          "date": "2018-02-10T21:08:32.622Z",
+          "age": 5
+        },
+        "phone": "(198)-423-0866",
+        "cell": "(110)-067-8525",
+        "id": {
+          "name": "",
+          "value": null
+        },
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/women/93.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/women/93.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/women/93.jpg"
+        },
+        "nat": "TR"
+      }
+    ],
+    "info": {
+      "seed": "db721a80625e11b0",
+      "results": 1,
+      "page": 1,
+      "version": "1.4"
+    }
+  }
