@@ -1,6 +1,6 @@
 // Add '/flixx-app/' prefix to links with class "prefix-link"
 document.addEventListener('DOMContentLoaded', function () {
-  const prefix = '/flixx-app';
+  const prefix = '/javascript-base/flixx-app';
   const links = document.querySelectorAll('.prefix-link');
 
   links.forEach(function (link) {

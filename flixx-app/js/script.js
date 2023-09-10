@@ -14,9 +14,9 @@ const global = {
 console.log(global.currentPage);
 
 // Kiểm tra xem đường dẫn có tiền tố '/flixx-app/' hay không
-if (global.currentPage.startsWith('/flixx-app/')) {
+if (global.currentPage.startsWith('/javascript-base/flixx-app/')) {
   // Cắt bỏ tiền tố '/flixx-app/'
-  const newPath = global.currentPage.slice('/flixx-app'.length);
+  const newPath = global.currentPage.slice('/javascript-base/flixx-app'.length);
   global.currentPage = newPath;
   console.log(global.currentPage);
 }
@@ -26,7 +26,7 @@ function hightLightActiveLink() {
 
   links.forEach((link) => {
     let path = link.getAttribute('href');
-    const newPath = path.slice('/flixx-app'.length);
+    const newPath = path.slice('/javascript-base/flixx-app'.length);
 
     if (newPath === global.currentPage) {
       link.classList.add('active');
